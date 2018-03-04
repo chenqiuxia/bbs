@@ -1,0 +1,154 @@
+@import "variable";
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "HiraKakuPro-W6", "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  -webkit-text-size-adjust: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  font-weight: normal;
+}
+
+body {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: map-get($global-color, text-main);
+  margin: 0;
+
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #646464;
+}
+
+button {
+  transition: all .2s ease-in-out;
+  &:hover {
+    background-color: map-get($global-color-base, primary-dark) !important;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.router-content {
+  width: 100%;
+}
+
+input, textarea {
+  font-size: 14px!important;
+}
+.el-input.is-disabled .el-input__inner{
+  background-color: map-get($global-color-base, disabled);
+  color: map-get($global-color-base, disabledFont);
+}
+input{
+  &[disabled] {
+    background-color: map-get($global-color-base, disabled);
+    color: map-get($global-color-base, disabledFont);
+  }
+  &:-moz-placeholder{
+    color: map-get($global-color-base, formTitle) !important;
+    text-align: left!important;
+  }
+  &::-webkit-input-placeholder {
+    color: map-get($global-color-base, formTitle) !important;
+    text-align: left!important;
+  }
+}
+
+.el-date-table th {
+  text-align: center;
+}
+.el-input--prefix .el-input__inner{
+  padding-left: 15px;
+}
+.el-input__inner{
+  background-color: #fff;
+}
+.el-input__prefix {
+  width: 30px;
+  right: 1px;
+  top: 3px;
+  left: auto;
+  padding-top: 3px;
+  height:25.5px;
+  font-size: 0px;
+  border-radius: 3px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-left: 1px solid map-get($global-color-base, border);
+  color: map-get($global-color-base, primary);
+  .el-icon-date {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/static/image/calendar.svg") no-repeat;
+  }
+}
+.el-icon-close:before {
+  font-size: 20px;
+  font-weight: 600;
+  color: map-get($global-color-base, primary);
+}
+
+.income {
+  input{
+    text-align: right;
+  }
+}
+//user 用户弹框样式 后面要提
+.rowStyle{
+  display:inline-block;
+  width: 380px;
+}
+.rowbox{
+  display:flex;
+  padding:4px 0;
+  word-wrap: break-word;
+}
+.el-date-editor.el-input, .el-date-editor.el-input__inner, .el-select {
+  width: 100%;
+}

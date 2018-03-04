@@ -1,0 +1,128 @@
+.page-list {
+  .el-header {
+    padding: 0;
+    height: 50px !important;
+  }
+  .el-form {
+    margin-bottom: 80px;
+    padding: 30px;
+    box-shadow: 1.3px 1.5px 2.9px 0.1px rgba(68, 68, 68, 0.3);
+    border: solid 1px #cfd0d0;
+    background-color: map-get($global-color-base, form);
+  }
+  .el-form-item {
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0
+    }
+    .el-select {
+      width: 100%;
+    }
+    .el-col {
+      text-align: left;
+      color: map-get($global-color-base, font);
+
+    }
+    .center-label {
+      text-align: center;
+    }
+    .el-input__inner {
+      width: 100%;
+      padding-left: 15px;
+      background-color: #fff;
+    }
+  }
+  .el-form-item__content {
+    label {
+      text-align: left;
+    }
+  }
+  .from-title {
+    border-bottom: 1px solid map-get($global-color-base, border);
+    margin-bottom: 15px;
+    height: 42px;
+    text-align: left;
+    line-height: 42px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: map-get($global-color-base, primary);
+    .el-icon-search {
+      font-size: 17px;
+      margin-right: 10px;
+    }
+  }
+  .search-btn-con {
+    padding-top: 10px;
+  }
+}
+.family-info {
+  .add {
+    text-align: right;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+    h2 {
+      width: 80%;
+      display: inline-block;
+      line-height: 37px;
+    }
+    button {
+      width: 188px;
+      font-size: 14px;
+      letter-spacing: 2.8px;
+      border-radius: 2px;
+    }
+  }
+  .el-table {
+    box-shadow: 1px 2px 3px 0.1px rgba(68, 68, 68, 0.3);
+    border: 1px solid map-get($global-color-base, border);
+    font-size: 14px;
+    margin-bottom: 30px;
+    th {
+      background-color: map-get($global-color-base, formTitle);
+      height: 40px;
+      color: #fff;
+      padding: 0;
+      letter-spacing: 0.7px;
+      text-align: center;
+      border-left: 1px solid #fff;
+      td{
+        overflow: hidden;
+      }
+      .cell {
+        text-align: center !important;
+        text-decoration: none!important;
+        font-size: 14px!important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        white-space: nowrap !important;
+      }
+      > .cell {
+        height: 40px;
+        line-height: 40px;
+      }
+    }
+    .el-table__row{
+      &:hover {
+        color: map-get($global-color-base, primary);
+        background-color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+  .el-dialog {
+    background-color: map-get($global-color-base, backgroud);
+  }
+  .dialog-footer {
+    button {
+      width: 150px;
+      font-size: 14px;
+      border-radius: 2px;
+      border: solid 0.5px map-get($global-color-base, border);
+    }
+    .btn-cancel {
+      color: map-get($global-color-base, primary);
+      background-color: map-get($global-color-base, hover);
+    }
+  }
+}

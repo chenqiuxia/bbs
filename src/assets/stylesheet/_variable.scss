@@ -1,0 +1,66 @@
+$global-color-base: (
+  primary:#225588,
+  secondary: #ebebeb,
+  title: #646464,
+  input: #f9f9f9,
+  font: #646464,
+  footer:#434647,
+  border: #dcdddd,
+  input-border:#dddddd,
+  form: #f9f9f9,
+  formTitle: #707578,
+  header: #434647,
+  backgroud: #f9f9f9,
+  hover: #eafaff,
+  error:#d51d00,
+  disabled:#ebebeb,
+  disabledFont:#a9a9a9,
+  j:#f8f8f8,
+  k:#abb4bd,
+);
+
+$global-color: (
+  border: map-get($global-color-base, primary),
+  footer: map-get($global-color-base, a),
+  text-main: map-get($global-color-base, d),
+);
+$global-width: (
+  break-point-xs: 414px,
+  break-point-sm: 768px,
+  break-point-md: 992px,
+  break-point-lg: 1200px,
+);
+$nav-height: (
+  a: 60px,
+  b: 48px,
+);
+
+$global-padding: (
+  a: 15px,
+  b: 12px,
+);
+
+$global-z-index: (
+  a: 10,
+  b: 100,
+  c: 1000,
+);
+
+$nav-height: (
+  a:60px,
+  b:48px,
+);
+
+$global-animation-speed-base: .2s;
+$global-animation-speed: (
+  a: $global-animation-speed-base * 1,
+  b: $global-animation-speed-base * 2,
+  c: $global-animation-speed-base * 3,
+);
+
+$global-break-point: (
+  sm: 768px,
+  md: 992px,
+  lg: 1200px,
+)
+
