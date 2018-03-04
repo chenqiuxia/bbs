@@ -2,11 +2,10 @@
 Error: File to import not found or unreadable: ~element-ui/packages/theme-chalk/src/index.
         on line 7 of element-variables.scss
 
-2: $--color-primary: #516b91;
-3: 
+$--color-primary: teal;
 4: /* 改变 icon 字体路径变量，必需 *\/
 5: $--font-path: '~element-ui/lib/theme-chalk/fonts';
-6: 
+6:
 7: @import "~element-ui/packages/theme-chalk/src/index";
 
 Backtrace:
@@ -50,6 +49,13 @@ element-variables.scss:7
 /usr/local/bin/scss:23:in `load'
 /usr/local/bin/scss:23:in `<main>'
 */
+/* 改变主题色变量 */
+$--color-primary: #009999;
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";
 body:before {
   white-space: pre;
   font-family: monospace;
