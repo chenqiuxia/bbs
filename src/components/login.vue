@@ -23,7 +23,7 @@
           </el-col>
         </el-form-item>
         <el-form-item>
-          <el-button type="primary" :disabled="!login.userName || !login.password || !login.code">登陆</el-button>
+          <el-button type="primary" :disabled="!login.userName || !login.password || !login.code" @click='toIndex'>登陆</el-button>
         </el-form-item>
       </el-form>
       <div class="link-area">
@@ -67,6 +67,9 @@
     methods: {
       changeCode () {
         this.src = this.src + '?' + Math.random
+      },
+      toIndex () {
+        this.$route.push({name: 'index'})
       }
     }
   }
