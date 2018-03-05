@@ -152,32 +152,7 @@ export const options = {
 }
 
 export const customerRequired = {
-  'customerName': '氏名',
-  'customerStatus': '対応状況',
-  'registrDate': '登録日',
-  'inheritRelation': '続柄',
-  'webVip': 'Web会員区分',
-  'decedentName': '氏名',
-  'decedentCpExisted': '墓地購入',
-  'decedentWillExisted': '遺言書の有無',
-  'decedentWillType': '遺言書の種類',
-  'decedentAddress': '現住所',
-  'decedentPerAd': '本籍地',
-  'decedentMi': '月間収入',
-  'decedentMe': '月間支出',
-  'decedentEc': '余裕資金額',
-  'inheritTotal': '相続資産総額',
-  'decedentAddPostcode': '現住所郵便番号',
-  'name': '氏名',
-  'legalHeirsNumber': '法定相続人数',
-  'address': '現住所',
-  'postcode': '郵便番号',
-  'legalHeirsPercent': '法定相続割合',
-  'yearIncome': '年収',
-  'tel': '電話番号',
-  'decedentTel': '電話番号',
-  'decedentMp': '携帯電話番号',
-  'mobilePhone': '携帯電話番号',
-  'totalAssets': '資産総額',
-  'decedentPerAdPostcode': '本籍地郵便番号'
+  'userName': '用户名',
+  'password': '密码',
+  'code': '验证码'
 }

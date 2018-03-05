@@ -12,7 +12,8 @@ body {
 
 a {
   text-decoration: none;
-  color: #fff;
+  //color: #fff;
+  color: map-get($global-color-base, font);
 }
 
 html {
@@ -45,7 +46,7 @@ p {
 button {
   transition: all .2s ease-in-out;
   &:hover {
-    background-color: map-get($global-color-base, primary-dark) !important;
+    //background-color: map-get($global-color-base, primary-dark) !important;
   }
 }
 
@@ -99,6 +100,9 @@ input{
   }
 }
 
+.el-form-item.is-required .el-form-item__label:before{
+  display: none;
+}
 .el-date-table th {
   text-align: center;
 }
@@ -115,7 +119,7 @@ input{
   left: auto;
   padding-top: 3px;
   height:25.5px;
-  font-size: 0px;
+  //font-size: 0px;
   border-radius: 3px;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
