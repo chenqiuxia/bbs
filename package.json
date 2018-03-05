@@ -5,7 +5,6 @@
   "author": "monstarlab",
   "private": true,
   "scripts": {
-    "prepush": "node build/build.js",
     "dev": "node build/dev-server.js",
     "start": "npm run dev",
     "build": "node build/build.js && http-server dist",
